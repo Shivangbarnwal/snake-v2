@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="icon.png">
+    <title>Viper Voyage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loader.css">
+</head>
+<body>
+    <div class="loader">
+        <div class="pac-man"></div>
+    </div>
+    <div class="snakeimg">
+        <img src="backsnake.svg" alt="" id="backsnake">
+    </div>
+    <div id="speedset" class="">
+        <div class="sp"><button class="speed" id="slow" onclick="setsp(7)">Easy</button></div>
+        <div class="sp"><button class="speed" id="med" onclick="setsp(9.5)">Medium</button></div>
+        <div class="sp"><button class="speed" id="fast" onclick="setsp(12)">Hard</button></div>
+    </div>
+    <div class="sidebar">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="links">
+            <h2>Themes</h2>
+            <ul id="boardsopt">
+                <li><img src="boardtheme/1.png" alt="" class="boarddisplayopt" onclick="changeback(1)"></li>
+                <li><img src="boardtheme/2.png" alt="" class="boarddisplayopt" onclick="changeback(2)"></li>
+                <li><img src="boardtheme/3.png" alt="" class="boarddisplayopt" onclick="changeback(3)"></li>
+                <li><img src="boardtheme/4.png" alt="" class="boarddisplayopt" onclick="changeback(4)"></li>
+                <li><img src="boardtheme/5.png" alt="" class="boarddisplayopt" onclick="changeback(5)"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="maingame">
+            <div class="stats">
+                <div id="scoreBox">Score: 0</div>
+                <div id="hiscoreBox">HiScore: 0</div>
+            </div>
+            <div id="board"></div>
+        </div>
+    </div>
+</body>
+<script src="game.js"></script>
+<script src="loaderscript.js"></script>
+</html>
